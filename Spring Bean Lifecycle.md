@@ -32,20 +32,6 @@ XML或annotation parser  --> BeanDefinition
 
 
 
-
-
-<context  attribute1=""  attr2="">
-
-​	<beans>
-
-​		<bean attribute1=""  attr2="">   attributes
-
-​			<element1>
-
-​			<element2>
-
-
-
 ## Spring Data JPA VS Mybatis
 
 Spring Dataf
