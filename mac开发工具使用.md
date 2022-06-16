@@ -1,3 +1,5 @@
+
+
 ## iterm2使用
 
 ### 常用功能
@@ -48,7 +50,7 @@ don2021没权限时，通过sudo切换执行命令command获得privilege
 
 2.在idea的project Settings -> Project -> SDK 选择os已安装的jdk
 
-![image-20220125205703444](/Users/don2021/Library/Application Support/typora-user-images/image-20220125205703444.png)
+![安装JDK](https://tva1.sinaimg.cn/large/e6c9d24egy1h0amfonjypj21rd0u0n6u.jpg)
 
 #### 安装maven
 

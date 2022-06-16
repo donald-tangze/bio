@@ -1,5 +1,21 @@
 
 
+Spring  Reference Doc Tutorial 
+
+https://docs.spring.io/spring-framework/docs/current/reference/html/index.html
+
+Spring Boot Tutorial
+
+https://docs.spring.io/spring-boot/docs/current/reference/html/index.html
+
+Spring Cloud Reference Doc Tutorial
+
+https://docs.spring.io/spring-cloud-netflix/docs/current/reference/html/
+
+
+
+
+
 XML或annotation parser  --> BeanDefinition 
 
 > 只有 singleton，非延迟加载的bean的instantiation实例化和applicationContext是一起处理的，其他延迟加载的和protype只到生成BeanDefinition，下面步骤是第一次使用时发生进行初始化

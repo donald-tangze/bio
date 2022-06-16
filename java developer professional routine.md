@@ -14,19 +14,15 @@ Industry, meetup, conference,   mature, resources
 
 4.ease of learning
 
+####  书籍
+
+javaScript definitive guide 🦏犀牛书
+
+professional javascript
 
 
 
 
-Spring  Reference Doc Tutorial 
 
-https://docs.spring.io/spring-framework/docs/current/reference/html/index.html
 
-Spring Boot Tutorial
-
-https://docs.spring.io/spring-boot/docs/current/reference/html/index.html
-
-Spring Cloud Reference Doc Tutorial
-
-https://docs.spring.io/spring-cloud-netflix/docs/current/reference/html/
 
