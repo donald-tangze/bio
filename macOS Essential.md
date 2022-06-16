@@ -38,7 +38,7 @@ set default application of specific extension设置文件默认打开程序
 
 ## System Preference setting
 
-![image-20220127162240090](/Users/don2021/Library/Application Support/typora-user-images/image-20220127162240090.png)
+![image-20220127162240090](https://tva1.sinaimg.cn/large/e6c9d24egy1h39x1ef3mpj210g0swq6g.jpg)
 
 > Confirgure the Dock
 >

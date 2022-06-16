@@ -1,5 +1,3 @@
-
-
 ## iterm2使用
 
 ### 常用功能
@@ -19,7 +17,7 @@
 
 ssh 用户名@IP地址 -p 端口
 
-\> ssh root@39.108.160.59 -p 22  BJtz2019
+\> ssh root@39.x.x.xx -p 22  BJtz
 
 
 
@@ -39,7 +37,7 @@ don2021没权限时，通过sudo切换执行命令command获得privilege
 
 2.在idea里download JDK...，会自动安装到用户目录 /home directory /Users/don2021/Library/ 
 
-![image-20220125213048191](/Users/don2021/Library/Application Support/typora-user-images/image-20220125213048191.png)
+![image-20220125213048191](https://tva1.sinaimg.cn/large/e6c9d24egy1h39x0tqh8bj20rw0g2jsq.jpg)
 
 
 
@@ -50,7 +48,7 @@ don2021没权限时，通过sudo切换执行命令command获得privilege
 
 2.在idea的project Settings -> Project -> SDK 选择os已安装的jdk
 
-![安装JDK](https://tva1.sinaimg.cn/large/e6c9d24egy1h0amfonjypj21rd0u0n6u.jpg)
+![安装JDK](https://tva1.sinaimg.cn/large/e6c9d24egy1h39x0o8ndhj21rd0u0n6u.jpg)
 
 #### 安装maven
 
@@ -82,7 +80,7 @@ shortcut快捷键  [Default macOS keymap](https://resources.jetbrains.com/storag
 
 编译compile source code into bit code,  打包package. that's package into jar 
 
-![image-20220125214009457](/Users/don2021/Library/Application Support/typora-user-images/image-20220125214009457.png)
+![image-20220125214009457](https://tva1.sinaimg.cn/large/e6c9d24egy1h39x0ltdmoj21tc0gumzl.jpg)
 
 Structure of a java projec
 
@@ -98,7 +96,7 @@ VS CODE适合多种语言的editor，powerful, extensible 尽管在java的编译
 
 > 启动软件  command + space, 输入code
 
-![image-20220126160234018](/Users/don2021/Library/Application Support/typora-user-images/image-20220126160234018.png)
+![image-20220126160234018](https://tva1.sinaimg.cn/large/e6c9d24egy1h39x0jcq96j210k074jrp.jpg)
 
 ### 0.界面：
 
@@ -106,7 +104,7 @@ view bar; directory explorer;  editor area; status bar; menu(top, edit command)
 
 ### 1.设置preferences
 
-![image-20220126160112080](/Users/don2021/Library/Application Support/typora-user-images/image-20220126160112080.png)![image-20220126160112261](/Users/don2021/Library/Application Support/typora-user-images/image-20220126160112261.png
+![image-20220126160112080](https://tva1.sinaimg.cn/large/e6c9d24egy1h39x0grvelj224a0q643z.jpg)![image-20220126160112261](/Users/don2021/Library/Application Support/typora-user-images/image-20220126160112261.png
 
 * Font size
 * set keyboard shortcut
@@ -130,7 +128,7 @@ view bar; directory explorer;  editor area; status bar; menu(top, edit command)
 |                 |                                                        |
 |                 |                                                        |
 
-![image-20220126160722855](/Users/don2021/Library/Application Support/typora-user-images/image-20220126160722855.png)
+![image-20220126160722855](https://tva1.sinaimg.cn/large/e6c9d24egy1h39wzrcn4sj20ec0aaq33.jpg)
 
 ### 3.插件extensions
 
@@ -168,7 +166,7 @@ Web code editing
 >
 > reveal in Finder;    open in integrated Terminal
 
-![image-20220126164754669](/Users/don2021/Library/Application Support/typora-user-images/image-20220126164754669.png)
+![image-20220126164754669](https://tva1.sinaimg.cn/large/e6c9d24egy1h39wzx1itmj20p40g8gna.jpg)
 
 * finding and replacing
 

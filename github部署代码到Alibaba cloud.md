@@ -14,8 +14,6 @@ CD:continuous deployment持续部署
 
 #### [连接alibaba cloud server到github](https://www.cxyzjd.com/article/niaoer2010/95629123)
 
-账号： root  密码：BJtz2019
-
 * 阿里云ECS的SERVER_SSH_KEY生成
 
   [Generating a new SSH key](https://docs.github.com/cn/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
