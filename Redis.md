@@ -28,9 +28,9 @@ Redis的实操中的，cluster集群部署，client客户端是表象。
 
 内存数据库
 
-![图片](https://static001.geekbang.org/resource/image/0e/3c/0e7b8c42d1daf631b19c7164ac4bdf3c.jpg)
+![图片](https://tva1.sinaimg.cn/large/e6c9d24egy1h4qixi0a5cj21dj0u0gow.jpg)
 
-2022.07.31
+##  2022.07.31
 
 Spring-integration-redis
 
