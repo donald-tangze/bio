@@ -207,11 +207,3 @@ Node.js
 
 
 
-
-## Java in a Nutshell, 7th Edition
-
-![image-20220328153552507](https://tva1.sinaimg.cn/large/e6c9d24egy1h0pmw7dv7dj20b20gmq4f.jpg)
-
-## Core Java® Volume I—Fundamentals, Tenth Edition
-
-![image-20220328155455098](https://tva1.sinaimg.cn/large/e6c9d24egy1h0png0wkypj20b30eh74y.jpg)

@@ -1,3 +1,30 @@
+
+
+### [Spring MVC Framework and REST](https://www.genuitec.com/spring-frameworkrestcontroller-vs-controller/#:~:text=Spring%20MVC%20Framework%20and%20REST&text=While%20the%20traditional%20MVC%20controller,HTTP%20response%20as%20JSON%2FXML.)
+
+ While the traditional MVC controller relies on the View technology, the RESTful web service controller simply returns the object and the object data is written directly to the HTTP response as JSON/XML. 
+
+
+
+JSP (JavaServer Page) put under /WEB-INF, build your application as an excutable JAR file, no way to satisfy directory /WEB-INF.
+
+That's to say JSP is usually packaged WAR filE. Tomcat is servlet container, make use of war
+
+if you're building an excutable Jar file, MVC view template can only choose from FreeMarker, Thymeleaf, Mustache etc.
+
+
+
+#### JDBC & Spring Data JPA (RDB)
+
+jdbcTemplate好处是省略很多公式代码，connection, preparedStament, resultSet, close resultSet, close statement, close connect
+
+spring data jpa: domain-specific language(DSL)
+
+> readOrder ByDeliveryZipAndPlacedAtBetween()s
+>
+
+
+
 那么现在需要哪些组件来完成一个请求的对应和执行呢？
 
 1.需要有一个地方（例如 Map）去维护从 HTTP path/method 到具体执行方法的映射；

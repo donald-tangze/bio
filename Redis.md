@@ -53,8 +53,8 @@ https://docs.spring.io/spring-integration/reference/html/redis.html#redis
 | adapter                                                      |                                                              |
 | Router                                                       |                                                              |
 | Splitter                                                     |                                                              |
-| Service Activator                                            | a generic endpoint for connecting a service instance to the messaging system. The input message channel must be configured, and, if the service method to be invoked is capable of returning a value, an output message Channel may also be provided. |
-| Channel Adapter                                              | an endpoint that connects a message channel to some other system or transport. Channel adapters may be either inbound or outbound.    the channel adapter does some mapping between the message and whatever object or resource is received from or sent to the other system (file, HTTP Request, JMS message, and others). |
+| [Service Activator(https://docs.spring.io/spring-integration/reference/html/overview.html#pojo-invocation) | a generic endpoint for connecting a service instance to the messaging system. The input message channel must be configured, and, if the service method to be invoked is capable of returning a value, an output message Channel may also be provided. |
+| [Channel Adapter](https://docs.spring.io/spring-integration/reference/html/redis.html#redis-inbound-channel-adapter) | an endpoint that connects a message channel to some other system or transport. Channel adapters may be either inbound or outbound.    the channel adapter does some mapping between the message and whatever object or resource is received from or sent to the other system (file, HTTP Request, JMS message, and others). |
 | [Messaging Gateways](https://docs.spring.io/spring-integration/reference/html/messaging-endpoints.html#gateway) | A gateway hides the messaging API provided by Spring Integration. It lets your application’s business logic be unaware of the Spring Integration API. By using a generic Gateway, your code interacts with only a simple interface. |
 
 ![handler endpoint](https://tva1.sinaimg.cn/large/e6c9d24egy1h4qicbyhzej20gy05dq34.jpg)
@@ -67,3 +67,6 @@ Figure 5. An inbound channel adapter endpoint connects a source system to a `Mes
 
 
 
+![target endpoint](https://docs.spring.io/spring-integration/reference/html/images/target-endpoint.jpg)
+
+Figure 6. An outbound channel adapter endpoint connects a `MessageChannel` to a target system.	

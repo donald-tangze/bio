@@ -1,13 +1,17 @@
 
 
-#### github python学习区
+#### 在线资源
 
-https://blog.csdn.net/u010670689/article/details/51911240
-书名：《Python程序设计入门到实战 》台湾人写的
-[python语法](http://www.runoob.com/python/python-basic-syntax.html)
+[github python学习区](https://github.com/jackfrued/Python-100-Days)
+
+[Python 库大全 ](https://blog.csdn.net/u010670689/article/details/51911240)
+[Python程序设计入门到实战]( )
 [python3语法](http://www.runoob.com/python3/python3-basic-syntax.html)
 
+[python语法](http://www.runoob.com/python/python-basic-syntax.html)
+
 python软件包在线仓库
+
 | Module/package |  Function  |
 | --- | --- |
 |Requests|  http请求  |
