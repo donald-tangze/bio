@@ -70,3 +70,13 @@ Figure 5. An inbound channel adapter endpoint connects a source system to a `Mes
 ![target endpoint](https://docs.spring.io/spring-integration/reference/html/images/target-endpoint.jpg)
 
 Figure 6. An outbound channel adapter endpoint connects a `MessageChannel` to a target system.	
+
+
+
+Title:   Essentials of systems analysis and design
+
+索书号：  003 VAL
+
+館藏編目號碼： 003383448
+
+出版者：Pearson Education

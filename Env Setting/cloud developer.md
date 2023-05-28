@@ -4,7 +4,7 @@ Cloud service
 
 cloud operation,  continuous operation:  zero downtime
 
-tool  and tech: Redundancy  冗余
+tool and tech: Redundancy  冗余
 
 * cloud management platform:    provisioning. Automated process
 * AIOPS

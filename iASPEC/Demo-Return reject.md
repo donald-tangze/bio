@@ -1,5 +1,3 @@
-
-
 # Notes for Return/Reject
 
 ###  Return

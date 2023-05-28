@@ -1,9 +1,3 @@
-10.3.80.133
-
-
-
-
-
 INSERT into BOA_GRP_ROLE_TBL (GRP_ID, MOD_ID, MOD_PERM) values (1, 100, '1,2,3,4,5');
 
 ```

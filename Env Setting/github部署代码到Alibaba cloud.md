@@ -25,7 +25,7 @@ CD:continuous deployment持续部署
 
 
 
-####  2.build jar package 
+####  2.2.build jar package 
 
 在project目录下
 
@@ -51,13 +51,15 @@ export PATH=${PATH}:${MAVEN_HOME}/bin
 
 
 
-####  3.run jar包
+####  2.3.run jar包
 
 在project目录下，mvn clean package
 
 在target目录下： java -jar api-0.0.1-SNAPSHOT.jar
 
-#### 4.create a containerized Spring Boot application using Docker
+
+
+#### 2.4.create a containerized Spring Boot application using Docker
 
 - Clone and run a Spring Boot application with Maven
 - [Create a new Dockerfile which contains instructions required to build a Java image](https://docs.docker.com/language/java/build-images/#create-a-dockerfile-for-java)

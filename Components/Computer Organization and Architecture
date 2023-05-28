@@ -4,7 +4,7 @@
 
 [Spring注解bean加载生命周期时序图](https://static001.geekbang.org/resource/image/6f/8a/6ff70ab627711065bc17c54c001ef08a.png)
 
-
+**Computer Organization and Architecture**： 計算機組成原理
 
 ```java
 DefaultListableBeanFactory.class
