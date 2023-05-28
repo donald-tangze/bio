@@ -1,8 +1,8 @@
-## 1. SWIFT INTERFACE TESTING
+## 1. Request from SWIFT INTERFACE TESTING
 
-测MQ: SWSG
+测MQ: SWSG. IBM MQ listener
 
-## 2. HOST INTERFACE TESTING
+## 2. Request to HOST INTERFACE TESTING
 
  Receive & Sending of Message from HOST or Other System through MQ
 
@@ -130,10 +130,6 @@ root / iaspec  @fps-test.fps.dev:22
 
 /data/www/html/payment-hub/.scb/
 
-http://10.3.60.52/payment-hub/.scb/20220810_SIT/paymentHub.zip
-
-https://fps-release.iaspec.com/payment-hub/.scb/20220815_SIT
-
 
 
 ####  app  server:
@@ -150,7 +146,7 @@ root / password
 
 tomcat目录：/opt/iaspec/payment-hub
 
-上传文件目录： ~
+上传文件目录：/opt/iaspec/payment-hub or ~  
 
 
 
@@ -201,28 +197,8 @@ AGRIHKHXXXX      BSUIHKHHA
 
 1.status update
 
-outstanding_for_return_reject    true hit amlr  001 return code
+outstanding_for_return_reject    true hit AMLR 001 return code
 
 outstanding_for_review    other not passed  
 
 all passed     pending_transaction
-
-
-
-
-
-update  payment_tbl set follow_up_status = 0 where follow_up_status  is null
-
-
-
-
-
-id=19
-
-incoming INDA 
-
-instructing agent :  SCGBKGB2XXX
-
-instructed agent :   BARCGB22XXX
-
-bzcsgbld   BARCGBLDF

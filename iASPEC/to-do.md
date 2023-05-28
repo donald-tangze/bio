@@ -1,8 +1,460 @@
+*Direct Return Instructed Amt, Settlement Amt.*
+
+ SRCREF : PPSS2305130019  COMPCD : SCBK APPLID : PPR TXNTYPE : 1 OTHREF : TEST2305130010E                      
+      DFLBCD :      DUEDATE : 00000000 CONTRYI :   ADJPDI : N ADJTXI : N ONLUPD : N                    
+ DMBRCD ACCTCD  HBRCD  ORGDEPT SEQNO ORGDATE  TXNCD   DR/CR CUR/AMT  PARTICULARS                          
+ 28   2715669    28  PP   000051 20230515 CR HKD    129860.00  SCBKCNSZ                 OVERSEAS BR C/A    
+ 28   2404031    28  PP   000052 20230513 CR HKD    129810.00                      R & D PAYABLE-A    
+ 28   2715669    28  PP   000053 20230513 DR HKD    129810.00  SCBKCNSZ                 OVERSEAS BR C/A    
+ 28   2404031    28  PP   000054 20230513 DR HKD    129810.00                      R & D PAYABLE-A    
+ 28   4102021    28  PP   000055 20230513 CR HKD      150.00                      COMMISSON REC-REM   
+
+
+
+ SRCREF : PPSS2305130028  COMPCD : SCBK APPLID : PPR TXNTYPE : 1 OTHREF : MAX-008-051302EI                     
+      DFLBCD :      DUEDATE : 00000000 CONTRYI :   ADJPDI : N ADJTXI : N ONLUPD : N                    
+ DMBRCD ACCTCD  HBRCD  ORGDEPT SEQNO ORGDATE  TXNCD   DR/CR CUR/AMT  PARTICULARS                          
+ 28   4102021    28  PP   000079 20230513 CR HKD      50.00                      COMMISSON REC-REM   
+ 28   1914661    28  PP   000080 20230513 DR CNY      42.25  SCBKCNSZ                 DUE FR OS BR-REM  
+
+
+
+
+
+## 20230427
+
+* in create transaction page, allow Debtor Agent to edit.  -- Completed
+* SIT#76 check credit amount and debit amount of General Ledger Entry File are equal
+  * here GENERAL_LEDGER((short) 10),
+
+
+
+
+
+###  20230317 Tasks
+
+* Update Host interface  (deadline Monday)
+
+  * WMSG  and AMSG request added new field "Message channel (incoming)"
+
+* split OBPU and settlement ledge record.
+
+* cove payment test:  fields.
+
+  
+
+### 20230320
+
+* set redsi hash data expired time and delete hash key value through spring-data-redis, Hash Data {uuid : {messageType : Swift MUR}}
+
+
+
+### 20230321
+
+* set redsi hash data expired time and delete hash key value through spring-data-redis, Hash Data {uuid : {messageType : Swift MUR}}
+
+
+
+###  CERTIFICATION
+
+Java  Certification
+
+```
+1. SSL CERT: Java  Certification
+D:\donald\idea\common\ecph-commons\ecph-core-generic\src\main\java\com\iaspec\ecph\util\EcphSSLSocketFactory.java
+IBM MQ connection Factory
+
+2. UserCredentialsConnectionFactoryAdapter
+Spring.jms.connection factory
+there are user and password 
+
+
+```
+
+
+
+## Git merge
+
+![image-20230224120723126](C:\Users\donald\AppData\Roaming\Typora\typora-user-images\image-20230224120723126.png)
+
+```
+payment-hub        .gitignore
+
+/test/
+/payment-processor/ecph-payment-processor-core/src/test/*
+```
+
+![image-20230224120954487](C:\Users\donald\AppData\Roaming\Typora\typora-user-images\image-20230224120954487.png)
+
+ 
+
+Rui sen
+
+![image-20230224151815549](D:\donald\document\admin_service.png)
+
+![image-20230224145821474](C:\Users\donald\AppData\Roaming\Typora\typora-user-images\image-20230224145821474.png)
+
+##  DEMO-20230213
+
+### Charge for reject
+
+* Debit instructing account(Vostro account)  and Credit SCB account should be present as a pair.
+* Check Type, Account, status fields in Database should be correct.
+
+###  Cove payment
+
+* When Release to swift,  keep status of pacs.009.cov and pacs.008 are consistent and change into Submiting together
+* Copy 008 internal settlement Method into Cove payment
+
+
+
+Direct Return
+
+
+
+Outward Return batch 2, add approval process Direct Return
+
+###  Task 0206 Meeting
+
+camt.056  cancellation
+
+XML message generate. 
+
+camx.
+
+
+
+#### deployment and version management. 
+
+release log:  include bugfix and enhancement. 
+
+
+
+#### TASK 0116-0120
+
+1. Implement the exception logic handling on incoming MT Query Message     Complete
+2. adjustment of Host interface OBPU and STSU,                                                     Complete
+3. XBFPS:  add a handler for EVENT: CheckInwardAMLResult4XbfpsHandler and Test     Complete
+4. Add interface: NotifyFpsReceivedHandler, notify fps that ppr that have received cross border message. 
+   Additional Data key: xbfps_id  +  OnHoldReprocess:  sendSupplementaryInfo          pending test
+   only allowed to be executed successfully once, then skip.                             
+5. supplement handler logic of Reject Message of pacs.002, Clarify Development requirement before test and execute Integration Test on Dev env                                                              Complete
+6. supplement  handler logic of cancellation camt.056 and Investigation camt.029，Clarify Development requirement before test  and execute Integration Test on Dev env                 Complete
+
+6. deploy app into SIT env and test MTn95/n96/n99 all saved, partly success and partly failed test passed.
+7. check Authentication Key of BSPPBNK field:    , and check bank bic forbidden message type.(not allowed)
+
+```
+//Implement the exception logic handling on incoming MT Query Message
+
+error log content:
+ErrorException
+Raw Message
+new line
+ErrorException
+Raw Message
+```
+
+
+
+#### TASK 0117
+
+pacs.009 不发outward remittance message.      status: pre-processing
+
+(1) ow
+
+(2) instructed bank = creditor bank
+
+(3) settlement method = "INGA"     vostro account
+
+####  TASK  11.15
+
+JKS key: store encrypted password for security
+
+
+
+
+
+
+
+####  TASK  11.01
+
+24,25,28 DW
+
+if it's  009.adv, then can acknowledge
+
+if it's 009.cov, then can acknowledge
+
+as long as not payee remittance, then allow to create transaction.
+
+####  Task 10.28
+
+1.Release to Swift AMSG
+
+update status to "completed",  set result as "NOT_PASSED".
+
+2.check swift status
+
+PPSS2210250069        E = Syntax error detected by MERVA           Syntax error
+
+PPSS2210260045        E = Syntax error detected by MERVA           Syntax error
+
+SHUT_DOWN  status
+
+### Task 10.27
+
+summarize:
+
+#### 1.concurrency: receive remittance and rerun-STP happen at the same time.
+
+issue list: 468;  478; 484; 491;
+
+#### 2. key conflict, lead to payment service failed to save processor results in database.
+
+issue list:  429; 471; 479; 481; 492;
+
+### 10.24
+
+* After user approval requirement, would trigger an event: ACCEPT_PAYMENT to release Swift message to Host. Then what should do if release failed?  Answer is return status to EDITING
+
+####  SHUT down status:
+
+```
+JMS  CachingConnectionFactory
+- initConnection
+- resetConnection
+```
+
+```
+Redis jedisConnectionFactory
+```
+
+auto-delete job daily need to delete both  those pre-processing transaction and approval requirement record.
+
+
+
+shutdown status = true, 
+
+remove listener from topic.
+
+#### 10.20 Task
+
+* 1. bic
+
+  * 1.1  getIbmBankCodeBy11bic
+  * 1.2  getAccountByIbmBankCode
+
+* 2. bic.substring(0,8) + XXX
+
+  * 2.1 getIbmBankCodeBy11bic
+  * 2.2  getAccountByIbmBankCode
+
+* 3. for each  bic.substring(0,8) + [0,9]{3}    List<> retrieveIBMBankCodeListByBic
+
+  * 3.1 getIbmBankCodeList   List<String>
+  * 3.2 for each getAccountByIbmBankCode
+
+
+
+if 11-digit, end-XXX,   Run 1 + 3
+
+if 11-digit, not end-XXX, Run 1+2+3
+
+if 8-digit, Run 2+3
+
+
+
+* getIbmBankCodeListBybic.substring(0,8)   List<String>
+
+* 1. bic         ibmcode + bic
+
+  * 1.2  getAccountByIbmBankCode
+
+* 2. bic.substring(0,8) + XXX    ibmcode + bic.substring(0,8) + XXX
+
+  * 2.2  getAccountByIbmBankCode
+
+* 3. for each  bic.substring(0,8) + [0,9]{3}    List<> retrieveIBMBankCodeListByBic
+
+  * 3.2 for each getAccountByIbmBankCode
+
+####  10.19 Task
+
+issue #384
+
+1.
+
+Timer job, Check shutdownStatus value from properties or database every 5 seconds, verify if it's equal 1.
+
+shutdownStatus == "1",  
+
+1. HostMessageListener  connection with IBM MQ for host   =  stop.   
+
+2. PaymentProcessorMessageRouter listener with Redis for other components  =  stop. 
+
+   
+
+   #346
+
+   
+
+   issue#149     fix
+
+   issue#362     fix
+
+###  10.17 Task
+
+code review:   handling status,  pre-requisity:   received    
+
+
+
+### 10.15 Task
+
+Avoid  Outstanding ->  PENDING_STP
+
+##### 1. adverse weather Handler,
+
+* failed:   suspended   ->  pending_stp          stop
+* succeed:  
+
+#####  2. payeebank   verify criteria:  
+
+* for pacs.008, see if creditor is SCBK
+* for pacs.009, see if creditor as agent is SCBK
+
+For payee bank remittance,  set status as Outstanding_for_review
+
+#### 1014 Task
+
+save swift status into payment custom5. 
+
+handler result is "not_passed",  set handling_status to complete.
+
+####  1013Task
+
+* QSTS  Return negatively activated, modify outward payment handling status to editing.
+
+  
+
+1. verify show charge info and exchange info
+
+   
+
+2. auto-retry  10 times.  set AML check
+
+   > if manual try, set 
+
+3. modify charge,  instructing agent 11 digit
+
+
+
+handling error,   error code , error description  into custom5
+
+<STATUS>|<Error Code>|<Error Descriptions>|<Error Code>|<Error Descriptions>
+
+Example, if Exception encountered:
+
+EXCEPTION_PENDING|AMSG-9903|Host Unexpected System Error
+
+Example, if ALL Exception issue has been resolved
+
+EXCEPTION_CLEAR|AMSG-9903|Host Unexpected System Error
+
+null
+
+1.009  (creditor bic = scbkhkhh)  --> outstanding for review  +  payee bank  normal 
+
+2.009  (creditor bic != scbkhkhh)  -->  intermediary, continue 
+
+3.009  (creditor  isn't bic code)    -->   intermediary + outstanding for review     normal 
+
+previous three rules are all apply to pacs.009cov. 
+
+
+
+4.009 adv  (whatever creditor bic is)   --  all terminate, outstanding for review
+
+
+
+UAT #issue 25,188.  test data can pass into ui
+
+
+
+####  10-10 Task
+
+when batch 1 passed all handlers, update outward transaction status to pre_processing
+
+#### 10-08 Task
+
+Fix issues
+
+* issue#292  ready for deployment
+* issue#285  #289    
+* #282   charge
+*  246 exchangeInfo = null
+* 94   settlement account
+
+
+
+
+
+* input settlement merge, test
+
+#####  topic: outward transaction message type: 008  cove
+
+* UAT#266
+
+need to check  authenticated key named "SWFTAUTH" by swfit address (instructed agent bic code) in BSPPRWF custom config table.  
+
+user input cove as settlement, 
+
+
+
+* UAT#270   
+
+Responsibility  of BankRelatedAccountHandler:   cove settlement method,  check  after  user input reimbursement agent as instructing reimbursement agent,
+
+####  Task1007:
+
+* check vostro account balance: use inward transaction Vostro bank account
+
+* settlement Status: 
+  * SettlementAndbalanceMQHandler passed, set to settled
+  * BankRelatedAccountHandler  failed,  set to undetermined
+* acknowledge function
+* Determine outward Charge Bearer, Settlement Method
+
+
+
+Task1005:
+
+SIT issue:   #29 yaml  remittance update
+
+
+
+user input charge bearer
+
+user input charge info
+
+####  Task1003:
+
+SIT issue:   #29 yaml  remittance update
+
+UAT issue: 
+
+* check if save processing day in database   -- Yes
+
+
+
 #### Task1001:
 
 ~~issue 199 duplicate with 219~~
 
-issue 217 duplicatewith 145 and 222  BankRelatedAccountHandler 
+> Test, 引申未解决，228
+
+issue 217 duplicate with 145 and 222  BankRelatedAccountHandler 
+
+> Test, alerted message
 
 ~~issue 219 CreditorAndDebtorHandler  add check on underlying customer credit info of pacs.009.cov~~
 
@@ -10,11 +462,13 @@ issue 217 duplicatewith 145 and 222  BankRelatedAccountHandler
 
 ~~issue 222, For pacs.008 [COVE], Debit a Nostro Account in inward settlement need manual handle.  BankRelatedAccountHandler~~ 
 
+> test: 引申问题，DetermineHandlingStatus, npe and  QOBD insufficient balance
+
 ~~UAT issue 223  stop STP when encounter with  Related Business Application Header~~
 
 ~~<u>UAT   issue 224  CreditorAndDebtorHandler  add all fields of Postal address</u>~~
 
-
+> Test, 未解决228 fix if-else order
 
 SIT issue:   #29 yaml  remittance update
 
@@ -415,18 +869,20 @@ Code is implemented according to below logic. Please kindly know.
 
 
 
-#### 20220915   pacs.009
+#### 20220915&1003   pacs.009
 
 1. add third validation result: Not Applicable, code adjustment as belows.  please kindly review. 
 
    A. do adjustment when handling status verify and control flow as belows: 
 
    1. AbstractValidationAndToolsExecutionServiceImpl ->  GenericValidationRule. validate() 
-   2. determineHandlingStatusSelfHandler 
-   3. checkApprovalStatusSelfHandler 
+   2. PaymentValidationRule -> isCurrentHandlerPassed()  
+   
+   3. determineHandlingStatusSelfHandler 
+   4. checkApprovalStatusSelfHandler 
 
-   4. swiftAckStatusQSTSMQHandler 
-
+   5. swiftAckStatusQSTSMQHandler 
+   
       
    
 

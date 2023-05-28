@@ -1,5 +1,9 @@
 ## SWIFT wire transfer
 
+refer to document 《Migration Guidebook》
+
+sHxuL7Jk3RDgtWp9
+
 #### definition：
 
 **Wire transfer**, **bank transfer**, or **credit transfer**

@@ -18,7 +18,11 @@
 
 
 
+welcometoiaspec
 
+welcome2iaspec
+
+HKtz2022!
 
 ```
 STPSwitchAndCutOffTimeApiHandler
@@ -42,10 +46,10 @@ task:
 
 给Handler取名字
 
-DTO转成fixedLength之前先写日志
+DTO转成fixed Length之前先写日志
 
 2022-08-29
 
-1. set next instructed agent， 查哪张表
+1. set next instructed agent， 查哪张表 
 
-2. code word, exceptionList, restricted country, cut-off time  的配置表
+2. code word, exception List, restricted country, cut-off time  的配置表

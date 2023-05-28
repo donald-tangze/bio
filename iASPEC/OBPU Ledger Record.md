@@ -1,8 +1,30 @@
+## General ledger
+
+type = 2,10, 40
+
+## Sub ledger
+
+###  exchange:  
+
+R41 getSLSSubsidiaryLedgerR41     type = 40  <>HKD
+
+R2  getSLSSubsidiaryLedgerR02      type =20 Vostro
+
+R1  getSLSSubsidiaryLedgerR01      type=20  Nostro
+
+### Compare GL / SL
+
+GL  Type=2 || 10   isCredit=0 || 1       not including 2404031              
+
+SL   Type=20           isCredit =0 || 1 
+
 Swift & Chats & XbFPS Ledger Record
 
 Here, ONLY handle general ledger record and Bank Position Debit Credit Record.
 
 Besides, there are commision record, exchange record,  2404031 record.
+
+
 
 ## 1.Outward Ledger Record
 
@@ -12,7 +34,6 @@ IS_CREDIT=False
 
 * 1.1.1.get internal settlement detail
   * 
-
 
 ```
 for Outward transaction, internal settlement detail
@@ -97,10 +118,6 @@ Object object = MapUtils.getObject(payment.getAdditionalData(), INTERNAL_SETTLEM
 ### 2.2.3.channel = XbFPS
 
 * 2518017
-
-
-
-
 
 
 
