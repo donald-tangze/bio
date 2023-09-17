@@ -366,7 +366,5 @@ module.exports.fahrenheitToCelsius = function(fahrenheit) {
 // Using Object Destructuring to be more Selective With `require()`
 /* celsius-to-fahrenheit.js */
 const { celsiusToFahrenheit } = require('./converters.js');
-
-
 ```
 
