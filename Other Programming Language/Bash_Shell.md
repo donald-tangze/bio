@@ -2,7 +2,7 @@ The Bourne Again Shell, or **[Bash](https://www.gnu.org/software/bash/manual/bas
 
 Developed by Brian Fox in 1989, Bash was released as part of the GNU Project to replace the original Bourne Shell. It was also one of the first programs ported to [Linux](https://www.codecademy.com/resources/docs/open-source/linux).
 
-## Operating System Compatibility
+## 1.Operating System Compatibility
 
 Over time, Bash has become available across many operating systems both as a default shell or an installable program.
 
@@ -36,3 +36,55 @@ don2021@Mac31 ~ % echo $0
 -zsh
 
 [Advanced Bash-Scripting Guide](https://tldp.org/LDP/abs/html/index.html)
+
+
+
+### 1.1.VIM operation
+
+![img](https://i.imgur.com/YLInLlY.png)
+
+### 1.2.Process Scheduling
+
+##### Process and Thread
+
+![](https://static-assets.codecademy.com/Courses/Operating-Systems/OS-Task-Managers-Screenshot.svg)
+
+
+
+##### Process  Status
+
+##### * *multithreading*
+
+### 1.3.Hardware
+
+CPU, Bus(Data Bus, Control Bus, Address Bus), Mainboard, I/O devices, RAM(hard disk)
+
+### 1.4.Functions of an OS
+
+Take a look at some of the vital functions of an OS:
+
+- Process Management
+- Memory Management
+- File Management
+- IO Management
+- Multitasking
+- Networking
+- Security
+- Providing a user interface
+
+## 2.DevOps
+
+**Environment**: local, dev, SIT, staging/UAT, production
+
+**Types of Infrastructure**: 1.In-house server;  2.Cloud
+
+Infrastructure as code
+
+
+
+System Health: Monitoring  ->  Resiliency -> System Health
+
+Continuous Integration/ Deployment
+
+Jenkins
+

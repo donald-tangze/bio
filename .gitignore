@@ -1,2 +1,4 @@
-
-forbid upload/
+/logs *
+!logs/.gitkeep
+/tmp
+*.swp

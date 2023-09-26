@@ -22,6 +22,8 @@
 
 Oracle 
 
+
+
 ## Strength of Java
 
 Java is not only a programming language, but also a platform, including JVM to support "compile once, run everywhere"
