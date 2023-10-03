@@ -1,5 +1,3 @@
-
-
 ### [Spring MVC Framework and REST](https://www.genuitec.com/spring-frameworkrestcontroller-vs-controller/#:~:text=Spring%20MVC%20Framework%20and%20REST&text=While%20the%20traditional%20MVC%20controller,HTTP%20response%20as%20JSON%2FXML.)
 
  While the traditional MVC controller relies on the View technology, the RESTful web service controller simply returns the object and the object data is written directly to the HTTP response as JSON/XML. 

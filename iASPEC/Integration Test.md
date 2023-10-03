@@ -101,10 +101,6 @@ Task:
 |                                                   |                                     |                              |
 | PAYMENT_PROCESSOR_OUTWARD_CANCELLATION_RECEIVED   | no tool                             |                              |
 | PAYMENT_PROCESSOR_OUTWARD_CANCELLATION_APPROVED   | no tool,                            | SUBMIT_PAYMENT_STATUS_REPORT |
-|                                                   |                                     |                              |
-|                                                   |                                     |                              |
-|                                                   |                                     |                              |
-|                                                   |                                     |                              |
 
 
 

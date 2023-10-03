@@ -34,7 +34,7 @@ MT950:    通知银行 bank statement
 A bank wire transfer is effected as follows:
 
 * 1. The entity wishing to do a transfer approaches a bank and gives the bank the order to transfer a certain amount of money. [IBAN](https://en.wikipedia.org/wiki/IBAN) and [BIC](https://en.wikipedia.org/wiki/ISO_9362) codes are given as well so the bank knows where the money needs to be sent.
-* 2. The sending bank transmits a message, via a secure system (such as [SWIFT](https://en.wikipedia.org/wiki/Society_for_Worldwide_Interbank_Financial_Telecommunication) or [Fedwire](https://en.wikipedia.org/wiki/Fedwire)), to the receiving bank, requesting that it effect payment according to the instructions given.
+* 2. The sending bank transmits a message, via a secure system (such as [SWIFT](https://en.wikipedia.org/wiki/Society_for_Worldwide_Interbank_Financial_Telecommunication) or [Fedwire](https://en.wikipedia.org/wiki/Fedwire), to the receiving bank, requesting that it effect payment according to the instructions given.
 * 3. The message also includes [settlement](https://en.wikipedia.org/wiki/Settlement_(finance)) instructions. The actual transfer is not instantaneous: funds may take several hours or even days to move from the sender's account to the receiver's account.
 * 4. Either the banks involved must hold a reciprocal account with each other, or the payment must be sent to a bank with such an account, a [correspondent bank](https://en.wikipedia.org/wiki/Correspondent_bank), for further benefit to the ultimate recipient.[*[citation needed](https://en.wikipedia.org/wiki/Wikipedia:Citation_needed)*]
 

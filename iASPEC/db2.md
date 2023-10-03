@@ -14,7 +14,7 @@ docker pull icr.io/db2_community/db2
 
 [Link ](https://www.ibm.com/docs/en/db2/11.5?topic=system-macos)
 
-https://www.ibm.com/blog/announcement/ibm-db2-developer-community-edition/
+htt ps://www.ibm.com/blog/announcement/ibm-db2-developer-community-edition/
 
 https://www.idug.org/blogs/john-maenpaa1/2020/11/04/installing-db2-on-macos-using-docker
 

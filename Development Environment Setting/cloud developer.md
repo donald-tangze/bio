@@ -38,11 +38,12 @@ ssh -i C:/Users/donal/.ssh/mac_id_ed25519 ec2-user@ec2-3-36-131-171.ap-northeast
 //   upload file 
 scp -i C:/Users/donal/.ssh/mac_id_ed25519 'C:/Users/donal/OneDrive/Workspace/Spring/Spring guides 2023/my-rest-service/target/my-rest-service-0.0.1-SNAPSHOT.jar'   ec2-user@ec2-3-36-131-171.ap-northeast-2.compute.amazonaws.com:/home/ec2-user/spring-service/
 
-
 curl 3.36.131.171:8080/greeting
 
 IAM  https://733429469646.signin.aws.amazon.com/console
 User name: donald           Console password:  VoNzl%2!
+
+nohup java -jar /home/ec2-user/spring-service/my-rest-service-0.0.1-SNAPSHOT.jar
 ```
 
 AWS components
@@ -64,6 +65,19 @@ AWS components
 * CodeDeploy
 
   > [CodeDeploy AppSpec File reference](https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file.html)
+  >
+  > [Install the CodeDeploy agent for Amazon Linux or RHEL](https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-agent-operations-install-linux.html)
+  >
+  > | Asia Pacific (Seoul) | aws-codedeploy-ap-northeast-2 | ap-northeast-2 |
+  > | -------------------- | ----------------------------- | -------------- |
+  >
+  > ```
+  > wget https://aws-codedeploy-ap-northeast-2.s3.ap-northeast-2.amazonaws.com/latest/install
+  > ```
+
+
+
+
 
 * CodePipline
 
