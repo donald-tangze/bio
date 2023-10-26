@@ -1,6 +1,10 @@
 ### [Spring MVC Framework and REST](https://www.genuitec.com/spring-frameworkrestcontroller-vs-controller/#:~:text=Spring%20MVC%20Framework%20and%20REST&text=While%20the%20traditional%20MVC%20controller,HTTP%20response%20as%20JSON%2FXML.)
 
- While the traditional MVC controller relies on the View technology, the RESTful web service controller simply returns the object and the object data is written directly to the HTTP response as JSON/XML. 
+[Overview of Spring MVC Processing Sequence](https://terasolunaorg.github.io/guideline/1.0.1.RELEASE/en/Overview/SpringMVCOverview.html#id1)
+
+![](https://terasolunaorg.github.io/guideline/1.0.1.RELEASE/en/_images/RequestLifecycle.png)
+
+While the traditional MVC controller relies on the View technology, the RESTful web service controller simply returns the object and the object data is written directly to the HTTP response as JSON/XML. 
 
 
 
@@ -8,7 +12,7 @@ JSP (JavaServer Page) put under /WEB-INF, build your application as an excutable
 
 That's to say JSP is usually packaged WAR filE. Tomcat is servlet container, make use of war
 
-if you're building an excutable Jar file, MVC view template can only choose from FreeMarker, Thymeleaf, Mustache etc.
+if you're building an excutable Jar file, MVC view template can only choose from FreeMarker, Thymeleaf, Mustache, JSP etc.
 
 
 
@@ -72,4 +76,6 @@ public static class EmbeddedJetty {
 
 
 ```
+
+
 

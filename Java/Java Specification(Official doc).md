@@ -14,6 +14,8 @@
 
 [Java8 In Action](https://www.manning.com/books/java-8-in-action)
 
+[Modern Java in Action ](https://www.manning.com/books/modern-java-in-action)
+
 [Head First Java](https://learning.oreilly.com/library/view/head-first-java/9781492091646/)
 
 [java in a nutshell](https://learning.oreilly.com/library/view/java-in-a/9781492037248/)
@@ -40,7 +42,7 @@ IDE，
 
 Industry, meetup, conference, mature, resources
 
-* 4.ease of learning
+* 4.  ease of learning
 
 ## Chapters of Knowledge Point
 
@@ -82,23 +84,72 @@ Generics 泛型
 
 
 
-### 1.*Behavior Parameterization* 行為參數化
+### 1.* Behavior Parameterization* 行為參數化
 
 use Lamda expression 
 
-### 2.Functional Programming
+### 2. Functional Programming
 
 函數式編程
 
+* functional interface: there is only one abstract method
+
+* interface could have implemented methods which set as **default**.
+
+  ```java
+  functional  interface      functional descriptor      Primitivae special
+      
+  Predicate<T>               () -> boolean           IntPredicate, LongPredicate
+  Consumer<T>                () -> void              IntConsumer, LongConsumer
+  Function<T, R>             T -> R         IntFunction<R>, IntToDoubleFun               
+  Supplier<T>                () -> T        IntSupplier, LongConsumer
+  BiFunction<T,U,R>          (T, U) -> R
+  ```
+
+  
+
+  Function andThen()
+
+  ```
+  public double integrate(DoubleFunction<Double> f, double a, double b){
+  	return (f.apply(a) + f.apply(b)) *(b-a) * 1/2;
+  }
+  
+  integrate((double x) -> x + 10, 3, 7)
+  
+  Function h = f.andThen(g);
+  h.apply(1);
+  ```
+
+  
+
 #### 2.1.Stream
 
+  intermediateoperationss <> terminall operations
+
+filter
+
+map
+
+sorted
 
 
-### 3.Lamada Expression
+
+forEach
+
+collect(Collector c)
+
+![image-20231019141122602](C:\Users\donal\AppData\Roaming\Typora\typora-user-images\image-20231019141122602.png)
+
+![image-20231019141200809](C:\Users\donal\AppData\Roaming\Typora\typora-user-images\image-20231019141200809.png)
+
+![image-20231019141251303](C:\Users\donal\AppData\Roaming\Typora\typora-user-images\image-20231019141251303.png)
+
+### 3. Lamada Expression
 
 
 
-###  4.Nested Class
+###  4. Nested Class
 
 ![a table showing qualities of non-static and static classes](https://static-assets.codecademy.com/Courses/intermediate-java/nested-classes/Art1720NestClassesStaticvsNonStatic-ForImplementation.svg)
 
