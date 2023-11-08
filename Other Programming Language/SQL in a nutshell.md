@@ -1,6 +1,6 @@
 # [SQL in a Nutshell](https://www.oreilly.com/library/view/sql-in-a/9781492088851/?_gl=1*em2e7y*_ga*MTMxMDkzODA0MS4xNjk3NDQxMDY2*_ga_092EL089CH*MTY5NzQ0NTk4Mi4yLjAuMTY5NzQ0NTk4Mi42MC4wLjA.)
 
-
+[<Learning SQL: generate, manipulate, and retrieve data - 3rd - 2020>](  https://www.oreilly.com/library/view/learning-sql-3rd/9781492057604/ )
 
 ## 1. Dataset Hierarchy
 
@@ -643,24 +643,6 @@ SELECT @storeParameter2_Value AS [List of Paramter2]
 ```
 
 https://medium.com/@yuvrendergill21/sql-stored-procedures-variables-parameters-outputs-62c653ebe0a0
-
-
-
-
-
-Hi Clara
-
-This is Donald Tang. My primary role in the last ten years has been Backend Developer, with around 20 percentage of the time being frontend related.
-
-I prefer a Backend developer role with part frontend development responsibility.
-
-Thank you, Clara!
-
-Best Regards
-
-Donald Tang
-
-
 
 
 

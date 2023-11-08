@@ -38,31 +38,5 @@ XML或annotation parser  --> BeanDefinition
 
 
 
-## Spring Data JPA VS Mybatis
 
-Spring Dataf
-
-JPA规范源自ORM框架的起源：Hibernate
-
-解决问题：面向对象Object Oriented，和关系型数据库Relational DBS，之间的映射Mapping
-
-
-
-JDBC  ->  JPA or Mybatis
-
- [TestJDBC.java](../计算机技术资料/3.0语言：Java/java/SSh书的代码/第五章/TestJDBC.java) 
-
-[MyBatis还是JPA?](https://juejin.cn/post/6880696204297142280)
-
-https://cloud.tencent.com/developer/article/1594337
-
-中国用MyBatis比spring data多，前者更简单，容易入手，Mapper，直接写sql，在关联查询上比后者有优势，对于数据模型频繁变动的项目更适合
-
-spring data是标准，未来趋势，国外使用较多。
-
-他们都可以对接不同的数据库，H2,  Mysql, postgreq,  Oracle, 
-
-Mybatis的原理， 都是动态代理，aop，将sql包装在jdbc sql connection, statement, executeQuery
-
-Repository  模式，实际更复杂，基于spring boot的aop
 
