@@ -155,7 +155,7 @@ Redis实操中的，cluster集群部署，client客户端是表象。
 
 * 1.数据库的数据结构，链表linkedlist, String, sortSet,
 
-  > 每种数据结构的具体实现，例如 List 在底层是一个链表，在 List 中查找元素时就会比较慢，而 Hash 和 Set 底层都是哈希表实现的，所以定位元素的速度非常快，而 Sorted Set 是把哈希表和跳表结合起来使用，查找元素和遍历元素都比较快。
+> 每种数据结构的具体实现，例如 List 在底层是一个链表，在 List 中查找元素时就会比较慢，而 Hash 和 Set 底层都是哈希表实现的，所以定位元素的速度非常快，而 Sorted Set 是把哈希表和跳表结合起来使用，查找元素和遍历元素都比较快。
 
 * 2.集群部署，分布式系统典型问题，高性能，高可靠，集群复制，故障监测，master选举
 
@@ -219,13 +219,3 @@ Figure 5. An inbound channel adapter endpoint connects a source system to a `Mes
 ![target endpoint](https://docs.spring.io/spring-integration/reference/html/images/target-endpoint.jpg)
 
 Figure 6. An outbound channel adapter endpoint connects a `MessageChannel` to a target system.	
-
-
-
-Title:   Essentials of systems analysis and design
-
-索书号：  003 VAL
-
-館藏編目號碼： 003383448
-
-出版者：Pearson Education
