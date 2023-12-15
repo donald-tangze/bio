@@ -1,24 +1,14 @@
+# Security Industry证券业
+
 ## [Order Management System (OMS)](https://www.investopedia.com/terms/o/oms.asp)
 
 证券交易平台
 
 
 
-
-
-
-
-
-
-
-
-
-
-Job Description: Senior Software Engineer (Java)
+Job Description: Senior Software Engineer (Java)  -- 广发证券
 
 Area:  Trading Systems (OMS / FIX)
-
- 
 
  
 

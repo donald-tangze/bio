@@ -18,8 +18,6 @@ bjtangze@gmail.com    HKtz2023!
 
 donald.tangze@outlook.com HKtz2022!            
 
-Amazon  account       
-
 ##  2.AWS tutorial
 
 [Connect to your Linux instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-to-linux-instance.html#connection-prereqs-private-key)
@@ -74,8 +72,6 @@ AWS components
   > ```
   > wget https://aws-codedeploy-ap-northeast-2.s3.ap-northeast-2.amazonaws.com/latest/install
   > ```
-
-
 
 
 
