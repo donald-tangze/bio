@@ -53,7 +53,7 @@ Catalogs (Instance) -> Schema(Database) -> Table (View) -> Column -> Data Type -
 * UNIQUE
 * CHECK Constraint
 
-## 3.DDL
+## 3.DDL(Data Definition Language)
 
 #### 3.1. CREATE DATABASE
 
@@ -159,7 +159,7 @@ FROM table [AS alias] {CROSS JOIN |
    HAVEING Clause add search conditions on the result of the GROUP BY Clause
 ```
 
-#### **4.3. ORDER** BY Clause
+#### 4.3. ORDER BY Clause
 
 ```
 ORDER BY {sort_expression [COLLATE collation_name]
@@ -181,7 +181,7 @@ ORDER BY {sort_expression [COLLATE collation_name]
 * EXISTS  SubQuery
 * SOME | ANY
 
-#### **4.5**. Sub Query
+#### 4.5. Sub Query
 
 An SQL **Subquery**, is a SELECT query within another query. It is also known as **Inner query** or **Nested query** and the query containing it is the outer query.
 
@@ -193,7 +193,9 @@ The outer query can contain the SELECT, INSERT, UPDATE, and DELETE statements. W
 - A subquery consists of all the clauses an ordinary SELECT clause can contain: GROUP BY, WHERE, HAVING, DISTINCT, TOP/LIMIT, etc. However, an ORDER BY clause is only used when a TOP clause is specified. It can't include COMPUTE or FOR BROWSE clause.
 - A subquery can return a single value, a single row, a single column, or a whole table. They are called scalar subqueries.
 
-## 5.DML(Insert, delete, update, commit)
+## 5.DML(Manipulation)
+
+Include Insert, delete, update, commit
 
 | SQL command       | SQL class       | MySQL/ MariaDB | Oracle | PostgreSQL | SQL Server |
 | ----------------- | --------------- | -------------- | ------ | ---------- | ---------- |
@@ -246,7 +248,7 @@ The outer query can contain the SELECT, INSERT, UPDATE, and DELETE statements. W
   [ WHERE search_condition | WHERE CURRENT OF cursor_name ]
   ```
 
-## 6.Security
+## 6.DCL(Data Control Language Security)
 
 #### 6.1. CONNECT
 
@@ -254,11 +256,7 @@ mysql -uroot -p'Abc123456!' < sakila-schema.sql
 
 mysql -uroot -p'Abc123456!' < sakila-data.sql
 
-
-
-##### 6.1.1. [create User](https://dev.mysql.com/doc/refman/8.0/en/create-user.html)
-
-
+##### 6.1.1. [Create User](https://dev.mysql.com/doc/refman/8.0/en/create-user.html)
 
 #### 6.2. CREATE TABLE
 
@@ -272,7 +270,7 @@ GRANT { {object privilege [,...] | role [,...]} }
 [FROM { CURRENT_USER | CURRENT_ROLE } ]
 ```
 
-##### MySQL GRANT
+##### 6.3.1.MySQL GRANT
 
 ```
 GRANT [ 
@@ -650,7 +648,7 @@ https://medium.com/@yuvrendergill21/sql-stored-procedures-variables-parameters-o
 
 
 
-## 10.[Leetcode Test](https://leetcode.com/problems/average-selling-price/?envType=study-plan-v2&envId=top-sql-50)
+## 10.[Leetcode  Sample](https://leetcode.com/problems/average-selling-price/?envType=study-plan-v2&envId=top-sql-50)
 
 Test 1251
 
