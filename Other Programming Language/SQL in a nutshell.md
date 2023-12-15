@@ -301,13 +301,13 @@ GRANT [
 
 #### 6.4. REVOKE
 
-![image-20231016191629334](C:\Users\donal\AppData\Roaming\Typora\typora-user-images\image-20231016191629334.png)
+![](https://raw.githubusercontent.com/engineertang/images/main/test/image-20231016191629334.png)
 
 ## 7.Built-in Function (Scalar Function)
 
 #### 7.1.Variable function (date and time functions)
 
-![image-20231016155001613](C:\Users\donal\AppData\Roaming\Typora\typora-user-images\image-20231016155001613.png)
+![](https://raw.githubusercontent.com/engineertang/images/main/test/image-20231016155001613.png)
 
 #### 7.2. General-purpose functions
 
@@ -353,7 +353,7 @@ GRANT [
 
 * Trigonometric functions 三角函数
 
-![image-20231016155149671](C:\Users\donal\AppData\Roaming\Typora\typora-user-images\image-20231016155149671.png)
+![](https://raw.githubusercontent.com/engineertang/images/main/test/image-20231016155149671.png)
 
 #### 7.4 String functions
 
@@ -362,9 +362,7 @@ GRANT [
 * LOWER / UPPDER
 * OVERLAY
 * SUBSTRING
-* TRIM
-
-![image-20231016155450810](C:\Users\donal\AppData\Roaming\Typora\typora-user-images\image-20231016155450810.png)
+* TRIM![](https://raw.githubusercontent.com/engineertang/images/main/test/image-20231016155413536.png)
 
 #### 7.5. Date function
 
