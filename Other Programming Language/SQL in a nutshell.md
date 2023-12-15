@@ -55,11 +55,11 @@ Catalogs (Instance) -> Schema(Database) -> Table (View) -> Column -> Data Type -
 
 ## 3.DDL
 
-##### 3.1. CREATE DATABASE
+#### 3.1. CREATE DATABASE
 
 * CREATE SCHEMA
 
-##### 3.3. CREATE TABLE
+#### 3.2. CREATE TABLE
 
 ```sql
 CREATE [{LOCAL TEMPORARY| GLOBAL TEMPORARY}] TABLE table_name
@@ -82,7 +82,7 @@ column_name  data_type + attribute( NOT NULL, DEFAULT expression, collate, refre
   CREATE ROLE role_name [WITH ADMIN {CURRENT_USER | CURRENT_ROLE}]
   ```
 
-##### 3.3. CREATE INDEX
+#### 3.3. CREATE INDEX
 
 ```CREATE [UNIQUE] INDEX index_name ON table_name (column_name[, ..])```
 
@@ -128,7 +128,7 @@ FROM [ONLY | OUTER]
 [ORDER BY {order_expression [ASC | DESC]} [,...] ]
 ```
 
-##### 4.1.JOIN Clause  |  JOIN Subclause
+#### 4.1. JOIN Clause  |  JOIN Subclause
 
 ```sql
 FROM table [AS alias] {CROSS JOIN |
@@ -146,7 +146,7 @@ FROM table [AS alias] {CROSS JOIN |
 */
 ```
 
-##### 4.2. GROUP BY Clause
+#### 4.2. GROUP BY Clause
 
 ```
 [GROUP BY group_by_expression {group_by_columns 
@@ -159,14 +159,14 @@ FROM table [AS alias] {CROSS JOIN |
    HAVEING Clause add search conditions on the result of the GROUP BY Clause
 ```
 
-##### 4.3.ORDER BY Clause
+#### **4.3. ORDER** BY Clause
 
 ```
 ORDER BY {sort_expression [COLLATE collation_name]
    [ASC | DESC]} [,...]
 ```
 
-##### 4.4. WHERE Clause
+#### 4.4. WHERE Clause
 
 ```
  { WHERE search_criteria | WHERE CURRENT OF cursor_name } 
@@ -181,9 +181,17 @@ ORDER BY {sort_expression [COLLATE collation_name]
 * EXISTS  SubQuery
 * SOME | ANY
 
-##### 4.5. Sub Query
+#### **4.5**. Sub Query
 
+An SQL **Subquery**, is a SELECT query within another query. It is also known as **Inner query** or **Nested query** and the query containing it is the outer query.
 
+The outer query can contain the SELECT, INSERT, UPDATE, and DELETE statements. We can use the subquery as a column expression, as a condition in SQL clauses, and with operators like =, >, <, >=, <=, IN, BETWEEN, etc.
+
+- Subqueries must be enclosed within parentheses.
+- Subqueries can be nested within another subquery.
+- A subquery must contain the SELECT query and the FROM clause always.
+- A subquery consists of all the clauses an ordinary SELECT clause can contain: GROUP BY, WHERE, HAVING, DISTINCT, TOP/LIMIT, etc. However, an ORDER BY clause is only used when a TOP clause is specified. It can't include COMPUTE or FOR BROWSE clause.
+- A subquery can return a single value, a single row, a single column, or a whole table. They are called scalar subqueries.
 
 ## 5.DML(Insert, delete, update, commit)
 
