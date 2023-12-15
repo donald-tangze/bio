@@ -1,3 +1,5 @@
+[TOC]
+
 # [SQL in a Nutshell](https://www.oreilly.com/library/view/sql-in-a/9781492088851/?_gl=1*em2e7y*_ga*MTMxMDkzODA0MS4xNjk3NDQxMDY2*_ga_092EL089CH*MTY5NzQ0NTk4Mi4yLjAuMTY5NzQ0NTk4Mi42MC4wLjA.)
 
 [<Learning SQL: generate, manipulate, and retrieve data - 3rd - 2020>](  https://www.oreilly.com/library/view/learning-sql-3rd/9781492057604/ )
