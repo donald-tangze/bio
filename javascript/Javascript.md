@@ -246,25 +246,7 @@ yesAwait(); // Prints: Yay, I resolved!
 
 
 
-![](https://static-assets.codecademy.com/Courses/Learn-JavaScript/Event-Loop-and-Concurrency/JavaScript-Engine-Diagram.png)https://static-assets.codecademy.com/Courses/Learn-JavaScript/Event-Loop-and-Concurrency/JavaScript-Engine-Diagram.png?_gl=1*235r6y*_ga*NjkzNTcyMTM3MS4xNjc5NzUxMDI4*_ga_3LRZM6TM9L*MTY5MzI4MTI0My4zLjEuMTY5MzI4MjMzNi41NS4wLjA.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![](https://static-assets.codecademy.com/Courses/Learn-JavaScript/Event-Loop-and-Concurrency/JavaScript-Engine-Diagram.png)https://static-assets.codecademy.com/Courses/Learn-JavaScript/Event-Loop-and-Concurrency/JavaScript-Engine-Diagram.png?_gl=1
 
 # 6.Modules
 

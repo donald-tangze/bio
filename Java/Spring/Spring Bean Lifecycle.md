@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 XML或annotation parser  --> BeanDefinition 
 
 > 只有 singleton，非延迟加载的bean的instantiation实例化和applicationContext是一起处理的，其他延迟加载的和protype只到生成BeanDefinition，下面步骤是第一次使用时发生进行初始化
@@ -21,14 +13,6 @@ XML或annotation parser  --> BeanDefinition
 ![img](https://tva1.sinaimg.cn/large/e6c9d24egy1h39x1p6u5gj20fq061aag.jpg)
 
 ![image-20220206150731348](https://tva1.sinaimg.cn/large/e6c9d24egy1h39x1s2jnqj217d0r5dk9.jpg)
-
-
-
-
-
-
-
-
 
 ![image-20220206152523105](https://tva1.sinaimg.cn/large/e6c9d24egy1h39x1x4rqtj211v0lr0uy.jpg)
 

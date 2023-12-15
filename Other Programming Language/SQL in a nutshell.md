@@ -6,43 +6,41 @@
 
 ## 1. Dataset Hierarchy
 
-Catalogs (Instance) -> Schema( Database) -> Table (View) -> Column -> Data Type -> Constraint
+Catalogs (Instance) -> Schema(Database) -> Table (View) -> Column -> Data Type -> Constraint
 
 ## 2.Foundamental Concepts
 
-
-
 #### 2.1.Category of syntax
 
-* Identifiers   User- or System-supplied name for database objects, such as table, index, constraint...
+* Identifiers:   User- or System-supplied name for database objects, such as table, index, constraint...
 
-* Literals        User- or System-supplied string or values that are not Identifiers   
+* Literals:        User- or System-supplied string or values that are not Identifiers   
 
-  > include number, strings, dates, and boolean
+  include number, strings, dates, and boolean
 
-* Operators
+* Operators:
 
-  > symbols specifying an action to be performed on one or more expressions, most often in DELETE, INSERT, SELECT, UPDATE statements.
+  symbols specifying an action to be performed on one or more expressions, most often in DELETE, INSERT, SELECT, UPDATE statements.
 
-   * Arithmetic operators     + - * / %
-   * Assignment operators   =   :=
-   * Bitwise operators           |  ^
-   * Comparison operators    = <> >= <=
+   * Arithmetic operators         + - * / %
+   * Assignment operators       =   :=
+   * Bitwise operators              |  ^
+   * Comparison operators     = <> >= <=
    * Logical                                 ALL AND ANY BETWEEN EXISTS  IN LIKE NOT OR SOME
    * Set                                        UNION [ALL]  INTERSECT   EXCEPT
-   * Unary                            +   -  ~
+   * Unary                                   +   -  ~
 
 * Reserved words and keywords
 
-  > Words with special meaning to the database SQL parser.
+  Words with special meaning to the database SQL parser.
 
 #### 2.2.Data Type
 
-* NUMBER         SMALLINT, BIGINT, INTEGER, NUMERIC(p, s), FLOAT, DOUBLE
+* NUMBER:         SMALLINT, BIGINT, INTEGER, NUMERIC(p, s), FLOAT, DOUBLE
 * Boolean
-* character, VARCHAR, TEXT,  
-* Temporal           date/TIME/datetime/ TIMESTAMP
-* Collection           Array
+* character:         VARCHAR, TEXT,  
+* Temporal:           date/TIME/datetime/ TIMESTAMP
+* Collection:           Array
 * JSON
 * XML
 * Geospatial type
@@ -50,8 +48,8 @@ Catalogs (Instance) -> Schema( Database) -> Table (View) -> Column -> Data Type 
 
 #### 2.3.CONSTRAINT
 
-* primary key   must be unique and not null; must not  be type of blob, array
-* FORIGN KEY Constraint
+* primary key Constraint:   must be unique and not null; must not  be type of blob, array
+* FORIGN KEY Constraint: 
 * UNIQUE
 * CHECK Constraint
 
@@ -297,8 +295,6 @@ GRANT [
 
 #### 6.4. REVOKE
 
-
-
 ![image-20231016191629334](C:\Users\donal\AppData\Roaming\Typora\typora-user-images\image-20231016191629334.png)
 
 ## 7.Built-in Function (Scalar Function)
@@ -336,12 +332,10 @@ GRANT [
 
 * EXTRACT 日期  temporal expression   EXTRACT(*data_part* FROM *expression*)
 
-  ```
+  ```sql
   EXTRACT(data_part FROM expression)  
   DATEPART(data_part, expression)  (MS SQL Server)
   ```
-
-  
 
 * MOD
 
@@ -427,7 +421,7 @@ return the number of full days between two dates.
 
 * STR_TO_DATE(str, format)         sample: STR_TO_DATE('2023-10-14', '%Y-%m-%d')
 
-  > reverse to DATE_FORMAT(date, format) 
+  reverse to DATE_FORMAT(date, format) 
 
 ##### 7.6.2.ORACLE
 
@@ -459,11 +453,9 @@ return the number of full days between two dates.
 
 #### 8.2. Window functions, aka, Analytic functions
 
-**window function is equivalent to Group_Clauses.  They both divided selected result sets into different set/collections by criteria. Here, in window function, criteria might be a expression, time range**
+Window function is equivalent to Group_Clauses.  They both divided selected result sets into different set/collections by criteria. Here, in window function, criteria might be a expression, time range
 
-**Then are used together with aggregate  functions: Max, Min, avg, sum**
-
-
+Then are used together with aggregate  functions: Max, Min, avg, sum
 
 ```sql
 FUNCTION_NAME(expr) [filter_clause] OVER window_clause
@@ -515,6 +507,8 @@ SELECT
 #### 8.3. Comparison between Group Clause and Window functions
 
 window function can support a virtual, moving window surrounding a row within  a partition
+
+
 
 ## 9. PL / SQL
 
@@ -568,7 +562,7 @@ returns_table_type ::= TABLE [(column_name1 data_type1,
 
 #### 9.2. Cursor
 
-* *DECLARE*, 
+* *DECLARE*
 
   ```
   DECLARE cursor_name [{SENSITIVE | INSENSITIVE | ASENSITIVE}]
@@ -648,7 +642,7 @@ https://medium.com/@yuvrendergill21/sql-stored-procedures-variables-parameters-o
 
 
 
-[Leetcode Test](https://leetcode.com/problems/average-selling-price/?envType=study-plan-v2&envId=top-sql-50)
+## 10.[Leetcode Test](https://leetcode.com/problems/average-selling-price/?envType=study-plan-v2&envId=top-sql-50)
 
 Test 1251
 
@@ -724,4 +718,3 @@ on
 group by Students.student_id, Subjects.subject_name
 order by Students.student_id, Subjects.subject_name
 ```
-
