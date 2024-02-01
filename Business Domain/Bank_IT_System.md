@@ -15,8 +15,18 @@ IDE: IBM ClearCase Developer based on Eclipse VS Idea
 
 SVN: ClearCase VS git
 
+| | ClearCase | git  |
+| | --------- | ---- |
+| local repo | check-in | commit |
+| local to remote | deliever | push  |
+| remote to local | pull | rebase |
+
 App Server: Websphere/ JBoss VS Tomcat
 
 Web Server: Nginx/Apache/NGINX
 
 Framework: EJB Container VS Spring
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2b49983 (test local branch, which would do rebase with master)
