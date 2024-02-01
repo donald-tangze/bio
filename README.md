@@ -3,3 +3,7 @@
 * javascript learning notes;
 * linux shell learning notes;
 * work notes in practical Banking/Internet industry
+* windows command script
+
+
+
