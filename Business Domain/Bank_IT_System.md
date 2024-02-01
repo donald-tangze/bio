@@ -4,10 +4,7 @@
 
 
 
-
-
 [WebSphere Application Server: Overview]  (https://www.ibm.com/docs/en/was/9.0.5?topic=websphere-application-server-overview)
-
 
 
 ## IBM Tools Set
