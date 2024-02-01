@@ -262,7 +262,7 @@ mysql -uroot -p'Abc123456!' < sakila-data.sql
 
 #### 6.3. GRANT 
 
-```json
+```sql
 GRANT { {object privilege [,...] | role [,...]} }
 [ON database_object_name]
 [TO grantee [,...] ]
